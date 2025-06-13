@@ -18,7 +18,7 @@ export default function HomeScreen() { // Define the functional component HomeSc
   // API Call on Component Mount
   // =====================
   useEffect(() => { // Hook that runs once when component mounts
-    fetch('http://192.168.56.1:5000/') // Make GET request to backend server (replace with local IP as needed)
+    fetch('http://192.168.1.73:5000/') // Make GET request to backend server (replace with local IP as needed)
       .then(res => res.text()) // Convert response to plain text
       .then(data => setMessage(data)) // Update state with data received from backend
       .catch(() => setMessage("Could not connect to backend")); // If fetch fails, display connection error
